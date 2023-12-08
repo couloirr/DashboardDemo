@@ -129,7 +129,7 @@ const NotFoundCover = () => {
                         component={'img'}
                         loading="lazy"
                         src={
-                          'https://assets.maccarianagency.com/backgrounds/img23.jpg'
+                          'https://shorturl.at/QXYZ4'
                         }
                         height={{ xs: 'auto', md: 1 }}
                         maxHeight={{ xs: 300, md: 1 }}

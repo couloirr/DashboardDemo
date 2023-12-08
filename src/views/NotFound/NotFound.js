@@ -83,7 +83,7 @@ const NotFound = () => {
                 <Box
                   component={'img'}
                   src={
-                    'https://assets.maccarianagency.com/svg/illustrations/drawkit-illustration6.svg'
+                    'https://shorturl.at/wAMP5'
                   }
                   width={1}
                   height={1}

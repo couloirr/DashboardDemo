@@ -32,7 +32,7 @@ const SigninSimple = () => {
                   <Box
                     component={'img'}
                     src={
-                      'https://assets.maccarianagency.com/svg/illustrations/drawkit-illustration2.svg'
+                      'https://shorturl.at/itxCR'
                     }
                     width={1}
                     height={1}

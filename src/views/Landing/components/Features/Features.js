@@ -97,7 +97,7 @@ const Features = () => {
               height={1}
               width={1}
               minHeight={300}
-              image="https://assets.maccarianagency.com/backgrounds/img4.jpg"
+              image="https://shorturl.at/ouK69"
             />
           </Box>
         </Grid>

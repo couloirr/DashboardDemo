@@ -42,7 +42,7 @@ const PasswordResetSimple = () => {
                   <Box
                     component={'img'}
                     src={
-                      'https://assets.maccarianagency.com/svg/illustrations/drawkit-illustration3.svg'
+                      'https://shorturl.at/kyAMR'
                     }
                     width={1}
                     height={1}
