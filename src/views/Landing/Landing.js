@@ -14,7 +14,7 @@ const Landing = () => {
   const theme = useTheme();
   return (
     <Box sx={{ overflowX: 'hidden' }}>
-      <Main bgcolor={'background.paper'}>
+      
        
         <Container>
           <Services />
@@ -59,7 +59,7 @@ const Landing = () => {
         <Container>
          
         </Container>
-      </Main>
+     
     </Box>
   );
 };

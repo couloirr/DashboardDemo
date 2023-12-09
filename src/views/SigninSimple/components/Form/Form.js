@@ -97,7 +97,7 @@ const Form = () => {
                 <Link
                   component={'a'}
                   color={'primary'}
-                  href={'/password-reset-simple'}
+                  href={'/password-reset'}
                   underline={'none'}
                 >
                   Forgot your password?
@@ -132,7 +132,7 @@ const Form = () => {
                   <Link
                     component={'a'}
                     color={'primary'}
-                    href={'/signup-simple'}
+                    href={'/signup'}
                     underline={'none'}
                   >
                     Sign up here.

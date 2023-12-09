@@ -16,7 +16,7 @@ const NotFoundCover = () => {
   });
 
   return (
-    <Main>
+  
       <Box
         sx={{
           width: 1,
@@ -150,7 +150,7 @@ const NotFoundCover = () => {
           </Box>
         </Container>
       </Box>
-    </Main>
+   
   );
 };
 

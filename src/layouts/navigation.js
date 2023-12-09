@@ -10,11 +10,11 @@ const pages = {
     },
     {
       title: 'Login',
-      href: '/signin-simple',
+      href: '/signin',
     },
     {
       title: 'Start Your Free Trial',
-      href: '/signup-simple',
+      href: '/signup',
     },
    
   ]

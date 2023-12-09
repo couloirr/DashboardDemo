@@ -15,7 +15,7 @@ const SigninSimple = () => {
   });
 
   return (
-    <Main>
+   
       <Box
         position={'relative'}
         minHeight={'calc(100vh - 247px)'}
@@ -59,7 +59,7 @@ const SigninSimple = () => {
           </Grid>
         </Container>
       </Box>
-    </Main>
+   
   );
 };
 

@@ -22,7 +22,7 @@ const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
         display={'flex'}
         component="a"
         href="/"
-        title="Cube"
+        title="Placeholder"
         width={{ xs: 100, md: 120 }}
         style={{ textDecoration: 'none' }}
       >
@@ -37,7 +37,7 @@ const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
           <path d="M11 17a1 1 0 001.447.894l4-2A1 1 0 0017 15V9.236a1 1 0 00-1.447-.894l-4 2a1 1 0 00-.553.894V17zM15.211 6.276a1 1 0 000-1.788l-4.764-2.382a1 1 0 00-.894 0L4.789 4.488a1 1 0 000 1.788l4.764 2.382a1 1 0 00.894 0l4.764-2.382zM4.447 8.342A1 1 0 003 9.236V15a1 1 0 00.553.894l4 2A1 1 0 009 17v-5.764a1 1 0 00-.553-.894l-4-2z" />
         </svg>
         <Typography fontWeight={700} marginLeft={1} >
-          Cube
+          Placeholder
         </Typography>
       </Box>
       </Box>
@@ -54,7 +54,7 @@ const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
       
           </Link> */}
         </Box>
-        <Box marginRight={{ xs: 1, sm: 1 }}>
+        {/* <Box marginRight={{ xs: 1, sm: 1 }}>
           <Link
             underline="none"
             component="a"
@@ -65,14 +65,13 @@ const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
             Pricing
       
           </Link>
-        </Box>
+        </Box> */}
 
-        <Box marginLeft={3} paddingLeft={3}  borderLeft={{    xs: 'none',
-          md: `2px solid ${theme.palette.divider}`}}>
+        <Box marginLeft={3} paddingLeft={3} >
           <Link
             underline="none"
             component="a"
-            href='/signin-simple'
+            href='/signin'
             color={colorInvert ? 'common.white' : 'text.primary'}
             sx={{ display: 'flex', alignItems: 'center' }}
           >
@@ -86,10 +85,10 @@ const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
             color="primary"
             component="a"
             // target="blank"
-            href='/signup-simple'
+            href='/signup'
             size="large"
           >
-           Start Your Free Trial
+           Sign Up
           </Button>
         </Box>
       </Box>

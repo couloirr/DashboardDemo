@@ -4,9 +4,9 @@ import Container from 'components/Container';
 
 const ServerError = () => {
   return (
-    <Main>
+    
       <Container>ServerError</Container>
-    </Main>
+    
   );
 };
 

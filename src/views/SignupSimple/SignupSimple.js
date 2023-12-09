@@ -15,7 +15,7 @@ const SignupSimple = () => {
   });
 
   return (
-    <Main>
+   
       <Box
         position={'relative'}
         minHeight={'calc(100vh - 247px)'}
@@ -59,7 +59,7 @@ const SignupSimple = () => {
           </Grid>
         </Container>
       </Box>
-    </Main>
+ 
   );
 };
 

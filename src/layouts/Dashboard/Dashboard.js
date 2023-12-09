@@ -8,25 +8,9 @@ import AppBar from '@mui/material/AppBar';
 import Container from 'components/Container';
 import { Topbar, Sidebar, Footer } from './components';
 
-const ChildMock = () => {
-  const theme = useTheme();
-  return (
-    <Box p={4}>
-      <Box
-        width={1}
-        height={1}
-        minHeight={800}
-        borderRadius={2}
-        border={`2px solid ${theme.palette.divider}`}
-        sx={{
-          borderStyle: 'dashed',
-        }}
-      />
-    </Box>
-  );
-};
 
-const Dashboard = () => {
+
+const Dashboard = ({Child}) => {
   const theme = useTheme();
   const isMd = useMediaQuery(theme.breakpoints.up('md'), {
     defaultMatches: true,
@@ -73,7 +57,21 @@ const Dashboard = () => {
         >
           <Box display="flex" flex="1 1 auto" overflow="hidden">
             <Box flex="1 1 auto" height="100%" overflow="auto">
-              <ChildMock />
+            <Box p={4}>
+      <Box
+        width={1}
+        height={1}
+        minHeight={800}
+        borderRadius={2}
+        border={`2px solid ${theme.palette.divider}`}
+        sx={{
+          borderStyle: 'dashed',
+        }}
+      >
+      <Child />
+      </Box>
+    </Box>
+              
               <Divider />
               <Container paddingY={4}>
                 <Footer />

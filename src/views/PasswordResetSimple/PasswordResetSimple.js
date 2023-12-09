@@ -15,7 +15,7 @@ const PasswordResetSimple = () => {
   });
 
   return (
-    <Main>
+ 
       <Box
         position={'relative'}
         minHeight={'calc(100vh - 247px)'}
@@ -59,7 +59,7 @@ const PasswordResetSimple = () => {
           </Grid>
         </Container>
       </Box>
-    </Main>
+ 
   );
 };
 

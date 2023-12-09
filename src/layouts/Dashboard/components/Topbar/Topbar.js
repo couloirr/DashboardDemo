@@ -11,17 +11,10 @@ import IconButton from '@mui/material/IconButton';
 import Tooltip from '@mui/material/Tooltip';
 import MenuIcon from '@mui/icons-material/Menu';
 
-const mock = [
+const routes = [
+
   {
-    title: 'Overview',
-    href: '#',
-  },
-  {
-    title: 'Analytics',
-    href: '#',
-  },
-  {
-    title: 'Automation',
+    title: 'Support',
     href: '#',
   },
 ];
@@ -55,12 +48,12 @@ const Topbar = ({ onSidebarOpen }) => {
           <path d="M11 17a1 1 0 001.447.894l4-2A1 1 0 0017 15V9.236a1 1 0 00-1.447-.894l-4 2a1 1 0 00-.553.894V17zM15.211 6.276a1 1 0 000-1.788l-4.764-2.382a1 1 0 00-.894 0L4.789 4.488a1 1 0 000 1.788l4.764 2.382a1 1 0 00.894 0l4.764-2.382zM4.447 8.342A1 1 0 003 9.236V15a1 1 0 00.553.894l4 2A1 1 0 009 17v-5.764a1 1 0 00-.553-.894l-4-2z" />
         </svg>
         <Typography fontWeight={700} marginLeft={1}>
-          Cube
+          Placeholder
         </Typography>
       </Box>
       <Box display={'flex'}>
         <Box sx={{ display: { xs: 'none', md: 'flex' } }} alignItems={'center'}>
-          {mock.map((item, i) => (
+          {routes.map((item, i) => (
             <Box marginLeft={3} key={i}>
               <Link
                 underline="none"
@@ -121,7 +114,7 @@ const Topbar = ({ onSidebarOpen }) => {
               transformOrigin={{ horizontal: 'right', vertical: 'top' }}
               anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
             >
-              {mock.map((item, i) => (
+              {routes.map((item, i) => (
                 <MenuItem key={i}>
                   <Link
                     underline="none"

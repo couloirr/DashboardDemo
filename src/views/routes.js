@@ -2,52 +2,33 @@ import React from 'react';
 
 import {
   Landing,
-
-
-
-  Pricing as PricingView,
-
+  People as PeopleView,
   PasswordResetSimple as PasswordResetSimpleView,
   SigninSimple as SigninSimpleView,
-
   SignupSimple as SignupSimpleView,
-
   NotFound as NotFoundView,
   NotFoundCover as NotFoundCoverView,
-  Dashboard as DashboardView
+  Data as DataView
 } from 'views';
 
-const routes = [
+
+export const unprotectedRoutes = [
   {
     path: '/',
     renderer: (params = {}) => <Landing {...params} />,
   },
-
   {
-    path: '/app',
-    renderer: (params = {}) => <DashboardView {...params} />,
-  },
-
-  
-  {
-    path: '/pricing',
-    renderer: (params = {}) => <PricingView {...params} />,
-  },
-
-  {
-    path: '/password-reset-simple',
+    path: '/password-reset',
     renderer: (params = {}) => <PasswordResetSimpleView {...params} />,
   },
   {
-    path: '/signin-simple',
+    path: '/signin',
     renderer: (params = {}) => <SigninSimpleView {...params} />,
   },
- 
   {
-    path: '/signup-simple',
+    path: '/signup',
     renderer: (params = {}) => <SignupSimpleView {...params} />,
   },
-  
   {
     path: '/not-found',
     renderer: (params = {}) => <NotFoundView {...params} />,
@@ -58,4 +39,15 @@ const routes = [
   },
 ];
 
-export default routes;
+
+export const protectedRoutes = [
+  {
+    path: '/app',
+    renderer: (params = {}) => <PeopleView {...params} />,
+  },
+  {
+    path: '/app/data',
+    renderer: (params = {}) => <DataView {...params} />,
+  },
+
+];

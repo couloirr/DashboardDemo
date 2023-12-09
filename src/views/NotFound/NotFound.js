@@ -17,7 +17,7 @@ const NotFound = () => {
   });
 
   return (
-    <Main>
+   
       <Box
         bgcolor={theme.palette.alternate.main}
         position={'relative'}
@@ -99,7 +99,7 @@ const NotFound = () => {
           </Grid>
         </Container>
       </Box>
-    </Main>
+   
   );
 };
 
