@@ -10,7 +10,7 @@ import useScrollTrigger from '@mui/material/useScrollTrigger';
 import Container from 'components/Container';
 import TopNav from 'components/TopNav';
 
-import { Topbar, Footer } from './components';
+import { Topbar, Footer, Sidebar } from './components';
 
 import pages from '../navigation';
 
@@ -60,12 +60,12 @@ const Main = ({ children, colorInvert = false, bgcolor = 'transparent' }) => {
           />
         </Container>
       </AppBar>
-      {/* <Sidebar
+      <Sidebar
         onClose={handleSidebarClose}
         open={open}
         variant="temporary"
         pages={pages}
-      /> */}
+      />
       <main>
         {children}
         <Divider />
