@@ -2,7 +2,7 @@ import React from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
-
+import { useAuth } from 'auth/AuthProvider';
 const userDashRoutes = [
   {
     groupTitle: 'Businees',
@@ -141,6 +141,16 @@ const userDashRoutes = [
 ];
 
 const SidebarNav = () => {
+  const { auth, signOut } = useAuth();
+  const handleLogout = async (e) => {
+    e.preventDefault();
+    try {
+      const { error } = await signOut();
+      console.log(error);
+    } catch (error) {
+      console.log(error);
+    }
+  };
   return (
     <Box padding={2}>
       {userDashRoutes.map((item, i) => (
@@ -181,22 +191,10 @@ const SidebarNav = () => {
         variant="contained"
         color="primary"
         fullWidth
-        component="a"
-        href="#"
-        startIcon={
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width={20}
-            height={20}
-            viewBox="0 0 20 20"
-            fill="currentColor"
-          >
-            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-          </svg>
-        }
+        onClick={handleLogout}
+        
       >
-        Contact us
+        Logout
       </Button>
     </Box>
   );

@@ -10,7 +10,7 @@ import MenuItem from '@mui/material/MenuItem';
 import IconButton from '@mui/material/IconButton';
 import Tooltip from '@mui/material/Tooltip';
 import MenuIcon from '@mui/icons-material/Menu';
-
+import {default as ThemeModeToggler} from 'components/ThemeModeToggler';
 const routes = [
 
   {
@@ -167,6 +167,9 @@ const Topbar = ({ onSidebarOpen }) => {
           >
             <MenuIcon />
           </Button>
+        </Box>
+        <Box marginLeft={{ xs: 2, md: 3 }}>
+        <ThemeModeToggler/>
         </Box>
       </Box>
     </Box>

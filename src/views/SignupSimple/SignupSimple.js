@@ -1,19 +1,36 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import useMediaQuery from '@mui/material/useMediaQuery';
-
-import Main from 'layouts/Main';
 import Container from 'components/Container';
 import { Form } from './components';
+import { useAuth } from 'auth/AuthProvider';
+import {  useNavigate } from 'react-router-dom';
 
 const SignupSimple = () => {
+  const {register} = useAuth();
+  const navigate = useNavigate();
   const theme = useTheme();
   const isMd = useMediaQuery(theme.breakpoints.up('md'), {
     defaultMatches: true,
   });
-
+  const handleSubmit = async (e) => {
+    
+   console.log(e);
+   const {email, password} = e;
+   try {
+      
+    const {
+      data,
+      error
+    } = await register(email,password);
+    if (error) console.log(error.message);
+    else navigate('/app');
+  } catch (error) {
+    console.log(`Login Failed ${error}`);
+  }
+  };
   return (
    
       <Box
@@ -34,7 +51,7 @@ const SignupSimple = () => {
               xs={12}
               md={6}
             >
-              <Form />
+              <Form onSubmit={handleSubmit} />
             </Grid>
             {isMd ? (
               <Grid item container justifyContent={'center'} xs={12} md={6}>

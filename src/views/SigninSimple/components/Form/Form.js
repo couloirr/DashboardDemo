@@ -21,15 +21,12 @@ const validationSchema = yup.object({
     .min(8, 'The password should have at minimum length of 8'),
 });
 
-const Form = () => {
+const Form = ({onSubmit}) => {
   const initialValues = {
     email: '',
     password: '',
   };
 
-  const onSubmit = (values) => {
-    return values;
-  };
 
   const formik = useFormik({
     initialValues,
