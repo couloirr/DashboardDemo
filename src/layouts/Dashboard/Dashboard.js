@@ -63,10 +63,6 @@ const Dashboard = ({Child}) => {
         height={1}
         minHeight={800}
         borderRadius={2}
-        border={`2px solid ${theme.palette.divider}`}
-        sx={{
-          borderStyle: 'dashed',
-        }}
       >
       <Child />
       </Box>
